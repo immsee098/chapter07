@@ -5,6 +5,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 
 @Getter
@@ -19,5 +21,8 @@ public class Member {
 
     private String name;
 
-    private String role;
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+    private boolean enabled;
 }

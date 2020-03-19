@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>에러-global</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+<h1><font color="orange">BoardException 발생</font></h1>
+<a th:href="@{/}">메인 화면으로</a>
+<table>
+    <tr>
+        <th bgcolor="#8b0000" align="left">애외메시지 : [[${exception.message}]]</th>
+    </tr>
+    <tr th:each="trace: ${exception.stackTrace}">
+        <td th:text="${trace}"></td>
+    </tr>
+</table>
+</body>
+</html>

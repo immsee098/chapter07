@@ -1,0 +1,4 @@
+package com.rubypaper.config;
+
+public class SecurityUser {
+}
