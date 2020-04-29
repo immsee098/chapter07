@@ -25,4 +25,5 @@ public class Member {
     private Role role;
 
     private boolean enabled;
+
 }

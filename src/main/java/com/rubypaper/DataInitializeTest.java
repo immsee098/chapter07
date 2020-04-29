@@ -2,6 +2,7 @@ package com.rubypaper;
 
 import com.rubypaper.domain.Board;
 import com.rubypaper.domain.Member;
+import com.rubypaper.domain.Role;
 import com.rubypaper.persistence.BoardRepository;
 import com.rubypaper.persistence.MemberRepository;
 import org.junit.Test;
@@ -28,14 +29,14 @@ public class DataInitializeTest {
         member1.setId("member1");
         member1.setName("둘리");
         member1.setPassword("member111");
-        member1.setRole("ROLE_USER");
+        member1.setRole(Role.ROLE_MEMBER);
         memberRepo.save(member1);
 
         Member member2 = new Member();
         member2.setId("member2");
         member1.setName("도우너");
         member1.setPassword("member111");
-        member1.setRole("ROLE_USER");
+        member1.setRole(Role.ROLE_MEMBER);
         memberRepo.save(member2);
 
         for(int i=1; i<=3; i++){
