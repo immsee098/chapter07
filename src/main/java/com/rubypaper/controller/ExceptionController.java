@@ -32,4 +32,4 @@ public class ExceptionController {
         model.addAttribute("exception", exception);
         return "/errors/sqlError";
     }
-}
+}//ㅇㅇㅇ
